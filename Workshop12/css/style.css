@@ -1,0 +1,337 @@
+section {
+  position: relative;
+  min-height: 100vh;
+  height: 600px;
+  padding: 40px 0;
+}
+.backImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.starterContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+.starterContent h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 64px;
+  max-width: 500px;
+}
+.starterContent h1 span {
+  color: var(--main-color);
+}
+
+.starterContent p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  max-width: 650px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.servicesButton {
+  border-radius: 8px;
+  height: 44px;
+  width: 200px;
+  color: white;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.servicesButton img {
+  margin-left: 10px;
+}
+.projectsButton {
+  border-radius: 8px;
+  height: 44px;
+  width: 200px;
+  color: black;
+  background-color: white;
+}
+
+.ProjectsSection {
+  background-color: var(--main-color);
+  height: auto;
+}
+.projectsStarter h1 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.projectsStarter ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.projectsStarter ul li {
+  color: white;
+  position: relative;
+  height: 32px;
+  list-style: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.projectsStarter ul li:hover {
+  color: black;
+}
+.projectsStarter ul .activeOption {
+  color: black;
+}
+.projectsStarter ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: black;
+  transition: width 0.3s;
+}
+
+.projectsStarter ul li:hover:before {
+  width: 100%;
+}
+
+.projectsStarter ul .activeOption::before {
+  width: 100%;
+}
+.card {
+  width: 32%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 20px;
+}
+.shadow {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+.cardContent {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  color: white;
+}
+.cardContent h1 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.cardContent p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.nextPage {
+  color: black;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-left: auto;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  gap: 10px;
+  padding: 5px 10px;
+  padding-right: 0;
+}
+.endSection {
+  background-color: black;
+  height: auto;
+}
+
+.endSection h2 {
+  text-align: center;
+  color: var(--main-color);
+}
+
+.endSection p {
+  text-align: center;
+
+  color: white;
+}
+
+.endSection h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  color: white;
+}
+
+.box {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--main-color);
+}
+
+.box h4 {
+  padding: 10px;
+  color: white;
+}
+
+.box p {
+  margin-left: 10px;
+}
+.customCol {
+  width: 30%;
+}
+
+.inputBlock {
+  height: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.inputBlock img {
+  position: absolute;
+  right: 40px;
+  height: 20px;
+  pointer-events: none;
+}
+.inputInside {
+  outline: none;
+  border: none;
+  padding: 0 20px;
+  padding-left: 40px;
+
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+textarea {
+  resize: none;
+  height: 150px;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 15px 20px;
+  padding-left: 40px;
+  border-radius: 10px;
+  background-color: white;
+}
+.contactButtonBlock {
+  width: 100%;
+  height: 60px;
+}
+.submitButton {
+  height: 60px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+}
+.contactBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.contactBox p {
+  text-align: start;
+  margin-left: 0;
+}
+.contactBox .starterP {
+  font-size: 18px;
+}
+.contactBox .starterTitle {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.contactBox .starterDescription {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 3px;
+  opacity: 0.7;
+}
+
+.starterP {
+  color: white;
+}
+footer {
+  background-color: black;
+  padding: 20px 0;
+}
+.footerSearch {
+  color: white;
+  font-weight: 400;
+}
+.footerSearchBlock {
+  position: relative;
+  margin-left: 10px;
+  height: 34px;
+  width: 300px;
+}
+.footerSearchBlock input {
+  outline: none;
+  height: 100%;
+  width: 100%;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  opacity: 0.5;
+}
+.footerSearchBlock img {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.fListStarter {
+  cursor: pointer;
+  color: white;
+  margin-bottom: 20px;
+}
+.flistDescription {
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  margin: 0;
+  margin-bottom: 3px;
+  transition: opacity 0.1s;
+}
+.flistDescription:hover {
+  opacity: 1;
+}
+.iconsRow img {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.1s;
+}
+.iconsRow img:hover {
+  opacity: 1;
+}
